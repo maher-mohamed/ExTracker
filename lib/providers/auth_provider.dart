@@ -77,7 +77,9 @@ class AuthProvider extends ChangeNotifier {
       final ref = _storage.ref().child('user_profiles').child('${_user!.uid}.jpg');
       await ref.putFile(imageFile);
       final url = await ref.getDownloadURL();
-      await _user!.updatePhotoURL(url);
+      // Add a timestamp to bypass caching
+      final timestampedUrl = '$url&t=${DateTime.now().millisecondsSinceEpoch}';
+      await _user!.updatePhotoURL(timestampedUrl);
       await _user!.reload();
       _user = FirebaseAuth.instance.currentUser;
       notifyListeners();
