@@ -1,14 +1,14 @@
-# Check for Flutter platform version
-platform :ios, '13.0'
+# Flutter Podfile helper
+load File.join(File.dirname(File.realpath(__FILE__)), 'Flutter', 'podhelper.rb')
 
-# CocoaPods analytics sends network stats. Specify to disable if needed.
-# disable_cocoapods_analytics!
+platform :ios, '13.0'
 
 target 'Runner' do
   use_frameworks!
   use_modular_headers!
 
   flutter_install_all_ios_pods File.dirname(File.realpath(__FILE__))
+  
   target 'RunnerTests' do
     inherit! :search_paths
   end
