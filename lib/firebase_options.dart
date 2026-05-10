@@ -24,8 +24,8 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyBmEhDAZQ2e8cddbB1m5Y9fhK2kmm-D05o',
-    appId: '1:838140609303:ios:6f7a6c9d2e1b4a3c2e1f2a', // Typical iOS ID format
+    apiKey: 'AIzaSyDXD_8v3B96q3Ny2u7U55zS3ouvf9xRxyg',
+    appId: '1:838140609303:ios:36a98320acd68d5b25ed52',
     messagingSenderId: '838140609303',
     projectId: 'expense-tracker-app-34570',
     storageBucket: 'expense-tracker-app-34570.firebasestorage.app',
