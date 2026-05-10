@@ -3,6 +3,7 @@ import 'package:expense_tracker_app/ui/screens/home/home_screen.dart';
 import 'package:expense_tracker_app/ui/screens/stats/stats_screen.dart';
 import 'package:expense_tracker_app/ui/screens/settings/settings_screen.dart';
 import 'package:expense_tracker_app/ui/screens/expense/add_expense_screen.dart';
+import 'package:expense_tracker_app/ui/screens/transactions/transactions_screen.dart';
 import 'package:expense_tracker_app/core/constants/colors.dart';
 
 class MainNavigationScreen extends StatefulWidget {
@@ -18,7 +19,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
   final List<Widget> _screens = [
     const HomeScreen(),
     const StatsScreen(),
-    const Center(child: Text('Notifications coming soon')), 
+    const TransactionsScreen(), 
     const SettingsScreen(),
   ];
 
@@ -84,7 +85,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
               _buildNavItem(Icons.grid_view_rounded, 0, 'Home'),
               _buildNavItem(Icons.analytics_rounded, 1, 'Stats'),
               const SizedBox(width: 48), 
-              _buildNavItem(Icons.notifications_none_rounded, 2, 'Alerts'),
+              _buildNavItem(Icons.history_rounded, 2, 'History'),
               _buildNavItem(Icons.settings_rounded, 3, 'Settings'),
             ],
           ),
