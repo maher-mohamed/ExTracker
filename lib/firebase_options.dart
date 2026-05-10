@@ -29,6 +29,6 @@ class DefaultFirebaseOptions {
     messagingSenderId: '838140609303',
     projectId: 'expense-tracker-app-34570',
     storageBucket: 'expense-tracker-app-34570.firebasestorage.app',
-    iosBundleId: 'com.example.expense_tracker_app',
+    iosBundleId: 'com.example.expenseTrackerApp',
   );
 }
