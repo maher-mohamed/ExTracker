@@ -53,7 +53,7 @@ class TransactionsScreen extends StatelessWidget {
     return Container(
       margin: const EdgeInsets.only(bottom: 16),
       child: Dismissible(
-        key: Key(expense.id ?? index.toString()),
+        key: Key(expense.id ?? expense.hashCode.toString()),
         direction: DismissDirection.endToStart,
         background: Container(
           alignment: Alignment.centerRight,
